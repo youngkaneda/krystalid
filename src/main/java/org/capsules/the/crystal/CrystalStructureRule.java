@@ -2,7 +2,9 @@ package org.capsules.the.crystal;
 
 public interface CrystalStructureRule {
 
-    public String getChildValueForNeighborhood(String neighborhood);
+    String getChildValueForNeighborhood(String neighborhood);
 
-    public String[] getDeBruijnConnectedNodesTo(String node);
+    String[] getDeBruijnConnectedNodesTo(String node);
+
+    int deBruijnSequenceSize();
 }

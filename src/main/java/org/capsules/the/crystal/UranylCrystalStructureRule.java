@@ -37,4 +37,9 @@ public class UranylCrystalStructureRule implements CrystalStructureRule {
     public String[] getDeBruijnConnectedNodesTo(String node) {
         return deBruijnGraph.get(node);
     }
+
+    @Override
+    public int deBruijnSequenceSize() {
+        return 2;
+    }
 }
